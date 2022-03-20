@@ -4,18 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Guess The Color</title>
   </head>
   <body>
-    <h1>Guess The Color</h1>
-    <h2>RGB (200, 100, 10)</h2>
-    <h3>Guess the color above</h3>
+      <h1>
+        Guess The Color<br>
+        <span id="rgbSpan">
+            RGB (200, 100, 10)
+        </span><br>
+        Select the correct color below
+      </h1>
 
-    <div>
-      <button>New Colors</button>
-      <span>Let's Play!</span>
-      <button>Easy</button>
-      <button>Hard</button>
+    <div id="statusBar">
+      <button id="newColorsBtn">New Colors</button>
+      <span class="status">Let's Play!</span>
+      <button id="easyBtn">Easy</button>
+      <button id="hardBtn">Hard</button>
     </div>
+    
+    <div class="mainBox">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
